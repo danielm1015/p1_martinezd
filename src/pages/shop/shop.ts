@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, SystemJsNgModuleLoader } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BuyoutPage } from '../buyout/buyout';
 
 /**
  * Generated class for the ShopPage page.
@@ -22,4 +23,10 @@ export class ShopPage {
     console.log('ionViewDidLoad ShopPage');
   }
 
+  goToBuyoutPage(){
+    this.navCtrl.push(BuyoutPage);
+  }
+  addToCart(){
+   console.log(event.value);
+  }
 }

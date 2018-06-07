@@ -12,9 +12,10 @@
 
 </ion-header>
 
-
 <ion-content padding>
-    <button ion-button>Apples</button>
-    <button ion-button>Bread</button>
-    <button ion-button>Milk</button>
+    <button ion-button (click)="addToCart($event)" value="Apples">Apples</button>
+    <button ion-button (click)="addToCart()" value="Bread">Bread</button>
+    <button ion-button (click)="addToCart" value="Milk">Milk</button>
+
+    <button ion-button full (click)="goToBuyoutPage()">Buyout</button>
 </ion-content>
