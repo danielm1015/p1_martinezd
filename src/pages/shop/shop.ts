@@ -26,7 +26,7 @@ export class ShopPage {
   goToBuyoutPage(){
     this.navCtrl.push(BuyoutPage);
   }
-  addToCart(){
-   console.log(event.value);
+  addToCart($event: any){
+   console.log(event);
   }
 }
