@@ -23,10 +23,8 @@ export class ShopPage {
     console.log('ionViewDidLoad ShopPage');
   }
 
-  goToBuyoutPage(){
-    this.navCtrl.push(BuyoutPage);
-  }
-  addToCart($event: any){
-   console.log(event);
+
+  addToCart(productData: {name: String, quantity: number}){
+    this.navCtrl.push(BuyoutPage, productData)
   }
 }

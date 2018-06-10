@@ -13,9 +13,8 @@
 </ion-header>
 
 <ion-content padding>
-    <button ion-button (click)="addToCart($event)" value="Apples">Apples</button>
-    <button ion-button (click)="addToCart()" value="Bread">Bread</button>
-    <button ion-button (click)="addToCart()" value="Milk">Milk</button>
+    <button ion-button (click)="addToCart({name: 'Apples', quantity: 4})">Apples</button>
+    <button ion-button (click)="addToCart({name: 'Bread', quantity: 1})">Bread</button>
+    <button ion-button (click)="addToCart({name: 'Milk', quantity: 2})">Milk</button>
 
-    <button ion-button full (click)="goToBuyoutPage()">Buyout</button>
 </ion-content>

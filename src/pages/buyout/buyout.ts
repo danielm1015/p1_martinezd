@@ -16,7 +16,10 @@ import { HomePage } from '../home/home';
 })
 export class BuyoutPage {
 
+  productData:{name: String, quantity: number};
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.productData = this.navParams.data;
   }
 
   ionViewDidLoad() {
